@@ -20,7 +20,7 @@ namespace IFX.Gluneon.MessageWriter
 
             var builder = new ConfigurationBuilder()
             .SetBasePath(System.IO.Directory.GetCurrentDirectory())
-            .AddJsonFile("appsettings.json")
+            //.AddJsonFile("appsettings.json")
             .AddEnvironmentVariables();
 
             Configuration = builder.Build();

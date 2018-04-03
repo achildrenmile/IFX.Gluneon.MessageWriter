@@ -17,5 +17,9 @@
   <ItemGroup>
     <None Remove="app.config" />
     <None Remove="include\.DS_Store" />
+    <None Remove="appsettings.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="appsettings.json" />
   </ItemGroup>
 </Project>
