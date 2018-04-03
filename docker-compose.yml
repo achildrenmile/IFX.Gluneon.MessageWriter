@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  ifx.gluneon.messagewriter:
+    image: ifxgluneon
+    build:
+      context: .
+      dockerfile: IFX.Gluneon.MessageWriter/Dockerfile
+    environment:
+      ConnectionString: mongodb://admin:gluneonmsg@localhost:27017
+      Database: GluneonMessages
+      Nats: fanz://localhost:4222
+      UseTLSforMongo: 'false'

@@ -1,0 +1,18 @@
+﻿syntax = "proto3";
+package gluneon;
+
+message Message {
+    string  Channel     = 1;
+    string  Publisher   = 2;
+    string  Protocol    = 3;
+    string  Name        = 4;
+    string  Unit        = 5;
+    double  Value       = 6;
+    string  StringValue = 7;
+    bool    BoolValue   = 8;
+    string  DataValue   = 9;
+    double  ValueSum    = 10;
+    double  Time        = 11;
+    double  UpdateTime  = 12;
+    string  Link        = 13;
+}
